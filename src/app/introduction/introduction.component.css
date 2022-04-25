@@ -1,0 +1,30 @@
+*{
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+.center{
+  text-align: center;
+}
+.bg-black{
+  background: black;
+  height: 400px;
+}
+.title{
+  padding: 135px 0px 30px 0px;
+  font-weight: 700;
+  font-size: 48px;
+}
+.btn{
+  background: #00B8FC;
+  font-family: 'Inter', sans-serif;;
+}
+.text{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0px 0px 35px 0px;
+  line-height: 30px;
+}
