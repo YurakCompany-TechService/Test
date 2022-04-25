@@ -1,0 +1,90 @@
+.box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#contact{
+  background-image: url("./img/contact-img.png");
+  padding: 80px;
+  font-family: 'Montserrat', sans-serif;
+}
+.personal-info{
+  width: 80%;
+}
+.personal-info mat-card{
+  height: 400px;
+}
+.personal-info div{
+  display: flex;
+  flex-direction: row;
+}
+.form{
+  width: 80%;
+}
+.form mat-card{
+  height: 400px;
+}
+mat-card-title, mat-card-subtitle {
+  text-align: center;
+  color: white;
+}
+mat-card{
+  color: white;
+  background-color: rgba(23, 23, 23, 1);
+}
+mat-card-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding: 30px 0px;
+}
+mat-card-subtitle{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0px 20px;
+}
+mat-card-subtitle{
+  padding: 5px 0 10px 0px;
+}
+h1 p{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 20px;
+}
+mat-card-content div div{
+  padding: 0px 0px 0px 50px;
+}
+mat-icon{
+  font-size: 30px;
+}
+input{
+  width: 100%;
+  margin: 10px 0px;
+  height: 30px;
+}
+textarea{
+  margin: 10px 0px;
+}
+.form h1{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+button{
+  background-color: #00B8FC;
+  border-radius: 10px;
+}
+@media (max-width: 1000px){
+  .box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  mat-card{
+    margin-top: 30px;
+  }
+}
