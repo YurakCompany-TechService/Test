@@ -1,0 +1,26 @@
+<mat-toolbar class="bg-gray white menu">
+  <button mat-icon-button class="space responsive" (click)="navResponsive()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="brand">TechService</span>
+  <ul *ngIf ="isCollapse; else contrary" >
+    <li class="nav-items" *ngFor="let link of links">
+      <a class="white" [href]="linkSection(link)">{{link}}</a>
+    </li>
+  </ul>
+  <ng-template #contrary>
+    <ul>
+      <li class="nav-res" *ngFor="let link of links">
+        <a class="white" [href]="linkSection(link)">{{link}}</a>
+      </li>
+    </ul>
+  </ng-template>
+  <ul>
+    <li class="nav-items">
+      <a href="..."><mat-icon>facebook</mat-icon></a>
+    </li>
+    <li class="nav-items">
+      <a href="..."><mat-icon>whatsapp</mat-icon></a>
+    </li>
+  </ul>
+</mat-toolbar>
