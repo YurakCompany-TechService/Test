@@ -1,0 +1,81 @@
+.img{
+  background: url("./img/services-img.jpg") no-repeat center;
+  mix-blend-mode: hard-light;
+  background-size: cover;
+}
+.card{
+  max-width: 400px;
+  margin: 120px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background: rgba(23, 23, 23, 1);
+}
+.x{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+mat-icon{
+  font-size: 80px;
+  width: 100px;
+  height: 100px;
+}
+mat-list-item{
+  margin-left: 40px;
+}
+.mat-list .mat-list-item {
+  height: 15px; /* default is 72px */
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: clamp(1rem, 0.8vw, 0.8rem);
+}
+.content{
+}
+.title-card{
+  padding: 30px 0px 20px 0px;
+}
+.title{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  padding: 65px 0px 0px 0px;
+}
+@media (max-width: 1000px){
+  .x{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card{
+    margin: 120px 120px 0px 120px;
+  }
+}
+
+@media (max-width: 800px){
+  #services{
+    margin-top: 100px;
+  }
+}
+@media (max-width: 700px){
+  #services{
+    margin-top: 200px;
+  }
+}
+@media (max-width: 1000px) and (min-width: 800px){
+  .card{
+    margin-left: 220px;
+  }
+}
+@media (max-width: 799px) and (min-width: 600px) {
+  .card{
+    margin-left: 180px;
+  }
+}
+@media(max-width: 1060px){
+  mat-list-item{
+    margin-left: 0px;
+  }
+}

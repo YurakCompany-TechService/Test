@@ -1,0 +1,30 @@
+<div class="img" id="services">
+  <h1 class="title">services</h1>
+  <div class="x">
+    <mat-card *ngFor="let service of services" class="card">
+      <div *ngIf="service == 'Business'; else contrary">
+        <mat-icon>domain</mat-icon>
+        <mat-card-title class="title-card">
+          {{service}}
+        </mat-card-title>
+        <mat-card-content *ngFor="let businessService of businessServices" class="content">
+          <mat-list>
+            <mat-list-item>{{businessService}}</mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </div>
+      <ng-template #contrary>
+        <mat-icon>laptop</mat-icon>
+        <mat-card-title class="title-card">
+          {{service}}
+        </mat-card-title>
+        <mat-card-content *ngFor="let technicianService of technicianServices" class="content">
+          <mat-list role="list">
+            <mat-list-item role="listitem">{{technicianService}}</mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </ng-template>
+    </mat-card>
+
+  </div>
+</div>
